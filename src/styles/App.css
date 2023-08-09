@@ -1,0 +1,17 @@
+:root{
+    --darkcolor: #000000;
+    --lightcolor: #dddddd;
+    --darklightcolor: #d4d4d4;
+    --accentcolor: #fc4e06;
+}
+
+body{
+    background-color: var(--lightcolor);
+}
+
+*{
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

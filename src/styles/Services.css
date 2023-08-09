@@ -1,0 +1,24 @@
+.services{
+    padding: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.services h1::before {
+    background-color: var(--accentcolor);
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 60px;
+    height: 60px;
+    right: 0;
+    opacity: 0.5;
+}

@@ -1,0 +1,115 @@
+.hero{
+    padding: 6em;
+    display: flex;
+    align-items: center;
+    padding-top: 10em;
+}
+
+.hero .text{
+    width: 50%;
+    padding: 0 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hero .paragraph{
+    display: flex;
+    gap: 1em;
+}
+.hero .dash{    
+    font-weight: 500;
+}
+
+.hero .text h1{
+    font-size: 4em;
+}
+
+.hero .text p{
+    font-size: 1.5em;
+}
+
+.hero .text span{
+    font-weight: 500;
+    background: linear-gradient(90deg, rgba(252, 78, 6, 0.25) 10%, rgba(0, 0, 0, 0) 100%);
+}
+
+.hero .scroll{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-top: 2em;
+    font-size: 0.75em;
+}
+
+.hero .scrollButton{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.hero .scrollButton:hover{
+    background-color: var(--accentcolor);
+}
+
+
+
+.hero .image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+}
+
+.hero .picture{
+    background-color: aliceblue;
+    height: 30em;
+    width: 20em;
+    position: relative;
+    display: inline-block;
+    background-image: url(../assets/picture.jpeg);
+    background-size: cover;
+    background-position: center; 
+}
+.hero .picture::before{
+    content: '';
+    position: absolute;
+    outline: 10px solid black;
+    outline-offset: -10px;
+    width: 100%;
+    height: 100%;
+    left: 25px;
+    top: 25px;
+    z-index: -1;
+}
+
+.hero .icons{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hero .icon{
+    height: 60px;
+    width: 60px;
+    content: "";
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.hero .icon:hover{
+    background-color: var(--accentcolor);
+}
+
+.hero .icon img{
+    height: 30px;
+}

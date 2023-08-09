@@ -1,0 +1,125 @@
+.aboutme{
+    padding: 12em 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.aboutme::before{
+    content: "";
+    position: absolute;
+    background-color: var(--darklightcolor);
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.aboutme .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 0 4em;
+}
+.aboutme .text h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    position: relative;
+}
+.aboutme .text h1::before{
+    background-color: var(--accentcolor);
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 60px;
+    height: 60px;
+    right: 55%;
+    opacity: 0.5;
+}
+
+.aboutme .text p {
+    font-size: 1.5em;
+}
+
+.aboutme .text span{
+    font-weight: 500;
+}
+
+.aboutme .paragraph {
+    display: flex;
+    gap: 1em;
+}
+.aboutme .dash {
+    font-weight: 500;
+}
+
+.aboutme .button {
+    padding: 1em 2em;
+    margin-top: 4em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+    transition: 0.5s;
+}
+.aboutme .button:hover {
+    background-color: var(--accentcolor);
+}
+
+.buttonContainer{
+    margin-top: 4em;
+}
+
+
+
+
+.aboutme .image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme .picture {
+    background-color: aliceblue;
+    height: 30em;
+    width: 20em;
+    position: relative;
+    display: inline-block;
+    background-image: url(../assets/picture.jpeg);
+    background-size: cover;
+    background-position: center;
+    outline: 10px solid white;
+    position: relative;
+}
+.aboutme .picture::before{
+    position: absolute;
+    background-color: var(--lightcolor);
+    content: "";
+    height: 125%;
+    width: 75%;
+    top: -12.5%;
+    right: -40%;
+    z-index: -1;
+}
+.aboutme .picture::after{
+    position: absolute;
+    width: 75%;
+    content: "";
+    height: 7.5px;
+    bottom: -12.5%;
+    right: -40%;
+    background-color: var(--accentcolor);
+    z-index: 0;
+}
+.aboutme .picture .orangeBar{
+    position: absolute;
+    content: "";
+    background-color: var(--accentcolor);
+    width: 20px;
+    height: 20%;
+    z-index: 0;
+    right: -30px;
+    bottom: 0;
+}
