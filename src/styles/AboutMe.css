@@ -1,5 +1,5 @@
 .aboutme{
-    padding: 12em 6em;
+    padding: 14em 6em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,6 +19,8 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: left;
+    justify-content: left;
     gap: 2em;
     padding: 0 4em;
 }
@@ -26,6 +28,7 @@
     font-size: 3em;
     margin-bottom: 1em;
     position: relative;
+    width: max-content;
 }
 .aboutme .text h1::before{
     background-color: var(--accentcolor);
@@ -34,7 +37,7 @@
     content: "";
     width: 60px;
     height: 60px;
-    right: 55%;
+    right: 0%;
     opacity: 0.5;
 }
 

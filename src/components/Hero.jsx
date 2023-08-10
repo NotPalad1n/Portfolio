@@ -26,13 +26,19 @@ const Hero = () => {
         <div className="picture"></div>
         <div className="icons">
           <div className="icon">
-            <img src={Instagram} alt="" />
+            <a href="https://www.instagram.com/younesoumast/">
+              <img src={Instagram} alt="" />
+            </a>
           </div>
           <div className="icon">
-            <img src={Linkedin} alt="" />
+            <a href="https://www.linkedin.com/in/younes-oumast/">
+              <img src={Linkedin} alt="" />
+            </a>
           </div>
           <div className="icon">
-            <img src={Github} alt="" />
+            <a href="https://github.com/NotPalad1n">
+              <img src={Github} alt="" />
+            </a>
           </div>
         </div>
       </div>

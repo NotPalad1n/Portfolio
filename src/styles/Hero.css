@@ -1,8 +1,7 @@
 .hero{
-    padding: 6em;
+    padding: 12em 6em;
     display: flex;
     align-items: center;
-    padding-top: 10em;
 }
 
 .hero .text{
@@ -112,4 +111,15 @@
 
 .hero .icon img{
     height: 30px;
+}
+
+
+
+
+.hero a{
+    width: 0;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

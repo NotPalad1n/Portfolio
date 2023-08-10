@@ -1,0 +1,106 @@
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    transition: 0.5s;
+    align-items: left;
+}
+.projectCard:hover{
+    background-color: white;
+}
+
+
+
+.placeholder{
+    position: relative;
+    width: 350px;
+}
+.projectCard .placeholder img {
+    width: 350px;
+}
+.projectCard .placeholder::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    right: 0;
+    background-color: black;
+    z-index: 0;
+    opacity: 0.1;
+}
+.projectCard .placeholder .button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    bottom: -10%;
+    right: 10%;
+    transition: 0.5s;
+}
+.projectCard .placeholder .button:hover{
+    background-color: var(--accentcolor);
+}
+
+
+
+.type{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--lighttext);
+}
+.type .dash {
+    width: 25px;
+    height: 2px;
+    background-color: var(--lighttext);
+    content: "";
+}
+
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: var(--lighttext);
+    width: 350px;
+}
+.info .description{
+    height: 57.6px;
+}
+.name{
+    font-weight: 600;
+    font-size: 1.5em;
+    color: black;
+}
+
+
+
+.links{
+    display: flex;
+    gap: 1em;
+    color: var(--lighttext);
+}
+.links img{
+    width: 20px;
+}
+.links div{
+    display: flex;
+    gap: 0.5em;
+}
+.links div > *{
+    transition: 0.5s;
+    text-decoration: none;
+    color: var(--lighttext);;
+}
+.links div > *:hover{
+    cursor: pointer;
+    color: var(--accentcolor);
+}

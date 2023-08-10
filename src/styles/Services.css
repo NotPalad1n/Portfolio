@@ -1,5 +1,5 @@
 .services{
-    padding: 6em;
+    padding: 10em 6em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,4 +21,78 @@
     height: 60px;
     right: 0;
     opacity: 0.5;
+}
+
+
+
+.services .cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6em;
+    margin-top: 4em;
+}
+
+
+
+.services .card{
+    padding: 8em 2em 6em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 1em;
+    border: 5px solid black;
+    width: 350px;
+    position: relative;
+    background-color: var(--lightcolor);
+}
+.services .card::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    outline: 5px solid var(--accentcolor);
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.services .card:hover:before{
+    transform: translate(25px, 25px);
+}
+
+
+
+.services .placeholder{
+    position: relative;
+    content: "";
+    width: 40px;
+    height: 40px;
+}
+.services .card .icon{
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.services .orangeBox{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -15px;
+    right: -15px;
+    background-color: var(--accentcolor);
+}
+
+
+
+.services .card p{
+    margin-top: 2em;
+}
+.services .card .header{
+    font-weight: 600;
+    font-size: 1.75em;
+    margin-top: 0em;
 }

@@ -1,0 +1,45 @@
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10em 6em;
+    position: relative;
+    gap: 4em;
+}
+.projects::before {
+    content: "";
+    position: absolute;
+    background-color: var(--darklightcolor);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+
+
+
+.projects h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    position: relative;
+}
+.projects h1::before {
+    background-color: var(--accentcolor);
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 60px;
+    height: 60px;
+    right: 0;
+    opacity: 0.5;
+}
+
+
+
+.projects .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 414px);
+    gap: 2em;
+}
