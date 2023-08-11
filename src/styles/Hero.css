@@ -115,11 +115,215 @@
 
 
 
-
 .hero a{
     width: 0;
     height: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+
+
+@media (min-device-width : 320px) and (max-device-width : 480px){
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 12em 1em;
+        gap: 3em;
+    }
+    .hero .text{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+    .hero .text h1 {
+        font-size: 3em;
+    }
+    .hero .text p{
+        font-size: 1em;
+    }
+    .hero .dash {
+        display: none;
+    }
+    .hero .scroll{
+        margin-top: 0;
+    }
+    .hero .scroll p{
+        display: none;
+    }
+
+
+
+    .hero .image{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 1em;
+    }
+    .hero .image .picture{
+        height: 20em;
+        width: 15em;
+    }
+    .hero .picture::before{
+        left: 15px;
+        top: 15px;
+        outline: 5px solid black;
+    }
+    .hero .icon{
+        width: 50px;
+        height: 50px;
+    }
+    .hero .icon img{
+        width: 25px;
+        height: 25px;
+    }
+}
+@media screen and (min-device-width : 481px) and (max-device-width : 750px){
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 12em 3em;
+        gap: 3em;
+    }
+
+    .hero .text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .hero .text h1 {
+        font-size: 3em;
+    }
+
+    .hero .text p {
+        font-size: 1em;
+    }
+
+    .hero .dash {
+        display: none;
+    }
+
+    .hero .scroll {
+        margin-top: 0;
+    }
+
+    .hero .scroll p {
+        display: none;
+    }
+
+
+
+    .hero .image {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .hero .image .picture {
+        height: 20em;
+        width: 15em;
+    }
+
+    .hero .picture::before {
+        left: 15px;
+        top: 15px;
+        outline: 5px solid black;
+    }
+
+    .hero .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hero .icon img {
+        width: 25px;
+        height: 25px;
+    }
+}
+@media screen and (min-device-width : 751px) and (max-device-width : 1024px){
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 12em 6em;
+        gap: 3em;
+    }
+
+    .hero .text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .hero .text h1 {
+        font-size: 3em;
+    }
+
+    .hero .text p {
+        font-size: 1em;
+    }
+
+    .hero .dash {
+        display: none;
+    }
+
+    .hero .scroll {
+        margin-top: 0;
+    }
+
+    .hero .scroll p {
+        display: none;
+    }
+
+
+
+    .hero .image {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .hero .image .picture {
+        height: 20em;
+        width: 15em;
+    }
+
+    .hero .picture::before {
+        left: 15px;
+        top: 15px;
+        outline: 5px solid black;
+    }
+
+    .hero .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hero .icon img {
+        width: 25px;
+        height: 25px;
+    }
+}
+@media (min-device-width : 1025px) and (max-device-width : 1224px){
 }

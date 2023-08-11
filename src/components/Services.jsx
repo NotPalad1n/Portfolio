@@ -8,7 +8,7 @@ import Code from "../assets/code.png"
 
 const Services = () => {
   return (
-    <div className="services">
+    <div className="services" id="Services">
       <h1>Services.</h1>
       <div className="cards">
         <div className="card">

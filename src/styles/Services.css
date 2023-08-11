@@ -90,9 +90,11 @@
 
 .services .card p{
     margin-top: 2em;
+    color: var(--lighttext);
 }
 .services .card .header{
     font-weight: 600;
     font-size: 1.75em;
     margin-top: 0em;
+    color: black;
 }

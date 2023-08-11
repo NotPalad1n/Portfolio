@@ -4,7 +4,7 @@ import "../styles/AboutMe.css";
 
 const AboutMe = () => {
   return (
-    <div className="aboutme">
+    <div className="aboutme" id="About">
       <div className="image">
         <div className="picture">
           <div className="orangeBar"></div>

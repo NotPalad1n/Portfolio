@@ -1,15 +1,14 @@
 import React from 'react'
 import { HashLink } from "react-router-hash-link";
 
-import "../styles/Navbar.css"
+import "../styles/Footer.css"
 
-const Navbar = () => {
+const Footer = () => {
   return (
-    <div className="navbar">
-      <div className="logo">
-        <p className="icon">Y</p>
-        <p>Younes Oumast</p>
-      </div>
+    <div className="footer">
+      <p>
+        <span>© All rights reserved by</span> Younes Oumast
+      </p>
       <ul>
         <li>
           <HashLink to="#Home">Home</HashLink>
@@ -24,13 +23,11 @@ const Navbar = () => {
           <HashLink to="#Projects">Projects</HashLink>
         </li>
         <li>
-          <HashLink to="#Contact" className="button">
-            Contact Me
-          </HashLink>
+          <HashLink to="#Home">🡡</HashLink>
         </li>
       </ul>
     </div>
   );
 }
 
-export default Navbar
+export default Footer

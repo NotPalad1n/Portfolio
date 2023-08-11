@@ -1,0 +1,24 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--darkcolor);
+    color: white;
+    padding: 6em;
+}
+.footer span{
+    color: var(--lightcolor);
+}
+.footer ul{
+    display: flex;
+    list-style: none;
+    gap: 3em;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.footer a:hover{
+    color: var(--accentcolor);
+}
