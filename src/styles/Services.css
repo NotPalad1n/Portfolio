@@ -98,3 +98,79 @@
     margin-top: 0em;
     color: black;
 }
+
+
+
+@media (min-device-width : 320px) and (max-device-width : 480px) {
+    .services{
+        padding: 6em 1em;
+    }
+    .services .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .services .card {
+        width: 250px;
+        padding: 8em 1em 6em 1em;
+    }   
+    .services .card:hover:before {
+        transform: translate(10px, 10px);
+    }
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 750px) {
+    .services {
+        padding: 6em 2em;
+    }
+
+    .services .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .services .card{
+        width: 350px;
+        padding: 8em 1em 6em 1em;
+    }
+    .services .card:hover:before {
+        transform: translate(10px, 10px);
+    }
+}
+
+@media screen and (min-device-width : 751px) and (max-device-width : 1024px) {
+    .services {
+        padding: 6em 3em;
+    }
+
+    .services .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .services .card {
+        width: 350px;
+    }
+    .services .card:hover:before {
+        transform: translate(10px, 10px);
+    }
+}
+
+@media (min-device-width : 1025px) and (max-device-width : 1224px) {
+    .services {
+        padding: 6em 6em;
+    }
+    .services .cards{
+        gap: 3em;
+    }
+    .services .card {
+        width: 275px;
+        height: 467.2px;
+    }
+    .services .card:hover:before {
+        transform: translate(10px, 10px);
+    }
+}
+@media (min-device-width : 1225px) and (max-device-width : 1400px) {
+    .services .card {
+        width: 275px;
+        height: 467.2px;
+    }
+}

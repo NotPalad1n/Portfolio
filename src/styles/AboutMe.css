@@ -65,6 +65,7 @@
     text-decoration: none;
     font-size: 1.25em;
     transition: 0.5s;
+    z-index: 0;
 }
 .aboutme .button:hover {
     background-color: var(--accentcolor);
@@ -114,7 +115,7 @@
     bottom: -12.5%;
     right: -40%;
     background-color: var(--accentcolor);
-    z-index: 0;
+    z-index: -1;
 }
 .aboutme .picture .orangeBar{
     position: absolute;
@@ -125,4 +126,88 @@
     z-index: 0;
     right: -30px;
     bottom: 0;
+}
+
+
+
+@media (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .aboutme{
+        display: flex;
+        flex-direction: column;
+        padding: 6em 1em;
+    }
+    .aboutme .text{
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+    .aboutme .text p {
+        font-size: 1.25em;
+    }
+    .aboutme .picture{
+        display: none;
+    }
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 750px) {
+    
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+        padding: 6em 3em;
+    }
+
+    .aboutme .text {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+
+    .aboutme .text p {
+        font-size: 1.25em;
+    }
+
+    .aboutme .picture {
+        display: none;
+    }
+}
+
+@media screen and (min-device-width : 751px) and (max-device-width : 1024px) {
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+        padding: 6em 6em;
+    }
+
+    .aboutme .text {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+
+    .aboutme .text p {
+        font-size: 1.25em;
+    }
+
+    .aboutme .picture {
+        display: none;
+    }
+}
+
+@media (min-device-width : 1025px) and (max-device-width : 1224px) {
+    .aboutme {
+        padding: 6em 6em;
+    }
+    
+    .aboutme .text {
+        gap: 1em;
+        padding: 0 0 0 2em;
+    }
+    .aboutme .picture::before {
+        right: -20%;
+    }
+    .aboutme .picture::after {
+        right: -20%;
+    }
 }
