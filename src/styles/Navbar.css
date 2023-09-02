@@ -60,3 +60,142 @@
     color: white;
     text-decoration: none;
 }
+
+
+.hamburger-button {
+    display: none;
+    cursor: pointer;
+}
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+/* Rotate first bar */
+.toggle .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.toggle .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.toggle .bar3 {
+    transform: translate(0, -7px) rotate(45deg);
+}
+
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .hamburger-button {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        padding: 2em;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+        position: fixed;
+        padding: 2em;
+        top: 100px;
+        left: 100%;
+        background-color: var(--lightcolor);
+        width: 100vw;
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    .active {
+        transform: translate(-100%);
+    }
+
+    .navbar .logo{
+        gap: 10px;
+    }
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 750px) {
+    .hamburger-button {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        padding: 2em;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+        position: fixed;
+        padding: 2em;
+        top: 100px;
+        left: 100%;
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    .active {
+        transform: translate(-100%);
+    }
+}
+
+@media screen and (min-device-width : 751px) and (max-device-width : 1024px) {
+    .hamburger-button {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        padding: 2em;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+        position: fixed;
+        padding: 2em;
+        top: 100px;
+        left: 100%;
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    .active {
+        transform: translate(-100%);
+    }
+}
+
+@media screen and (min-device-width : 1025px) and (max-device-width : 1280px) {
+    .navbar {
+        padding: 1.5em 4em;
+    }
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        align-items: center;
+    }
+}
