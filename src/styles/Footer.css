@@ -22,3 +22,67 @@
 .footer a:hover{
     color: var(--accentcolor);
 }
+
+
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .footer{
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2em;
+    }
+    .footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 750px) {
+    .footer {
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2em;
+    }
+
+    .footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-device-width : 751px) and (max-device-width : 1024px) {
+    .footer {
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2em;
+    }
+
+    .footer ul {
+        display: flex;
+        
+        align-items: center;
+    }
+}
+
+@media screen and (min-device-width : 1025px) and (max-device-width : 1300px) {
+    .footer {
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2em;
+    }
+
+    .footer ul {
+        display: flex;
+        align-items: center;
+    }
+}

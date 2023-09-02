@@ -104,3 +104,26 @@
     cursor: pointer;
     color: var(--accentcolor);
 }
+
+
+
+@media (min-device-width : 320px) and (max-device-width : 480px) {
+    .projectCard{
+        padding: 1em;
+    }
+    .placeholder{
+        width: 270px;
+    }
+    .projectCard .placeholder img {
+        width: 270px;
+    }
+    .info {
+        width: 270px;
+    }
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 750px) {}
+
+@media screen and (min-device-width : 751px) and (max-device-width : 1024px) {}
+
+@media (min-device-width : 1025px) and (max-device-width : 1224px) {}

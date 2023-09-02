@@ -43,3 +43,52 @@
     grid-template-columns: repeat(3, 414px);
     gap: 2em;
 }
+
+
+
+@media (min-device-width : 320px) and (max-device-width : 480px) {
+    .projects{
+        padding: 6em 1em;
+        gap: 1em;
+    }
+    .projects .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        gap: 2em;
+    }
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 750px) {
+    .projects {
+        padding: 6em 2em;
+    }
+    .projects .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 414px);
+        gap: 2em;
+    }
+}
+
+@media screen and (min-device-width : 751px) and (max-device-width : 1024px) {
+    .projects {
+        padding: 6em 2em;
+    }
+
+    .projects .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 414px);
+        gap: 2em;
+    }
+}
+
+@media (min-device-width : 1025px) and (max-device-width : 1300px) {
+    .projects {
+        padding: 6em 2em;
+    }
+
+    .projects .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 414px);
+        gap: 2em;
+    }
+}

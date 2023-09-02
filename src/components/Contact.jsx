@@ -68,7 +68,7 @@ const Contact = () => {
   return (
     <div className="contact" id="Contact">
       <div className="text">
-        <div>
+        <div className="description">
           <h1>Contact Me.</h1>
           <div className="paragraphs">
             <p>

@@ -130,7 +130,7 @@
 
 
 
-@media (min-device-width : 320px) and (max-device-width : 480px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
     .aboutme{
         display: flex;
@@ -195,7 +195,7 @@
     }
 }
 
-@media (min-device-width : 1025px) and (max-device-width : 1224px) {
+@media screen and (min-device-width : 1025px) and (max-device-width : 1224px) {
     .aboutme {
         padding: 6em 6em;
     }
