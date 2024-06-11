@@ -30,7 +30,7 @@ const AboutMe = () => {
           </p>
         </div>
         <div className="buttonContainer">
-          <a href="#" className="button">
+          <a href="#Contact" className="button">
             Contact Me
           </a>
         </div>
